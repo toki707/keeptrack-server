@@ -5,6 +5,9 @@ const { Schema } = mongoose;
 const UserSchema = new Schema({
     id: { type: String, required: true },
     name: { type: String, required: true },
+    banner: { type: String, required: true },
+    pfp: { type: String, required: true },
+    at: { type: String, required: true },
     performances: [
         {
             circuit: {
