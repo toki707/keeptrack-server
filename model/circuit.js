@@ -17,6 +17,7 @@ const CircuitSchema = new Schema({
     preview: { type: String, required: false },
     outline: { type: String, required: false },
     location: { type: String, required: false },
+    isFav: { type: Boolean, required: false },
 });
 
 export const CircuitModel = mongoose.model("Circuit", CircuitSchema);

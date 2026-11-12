@@ -19,6 +19,8 @@ const VoitureSchema = new Schema({
         range: { type: Number, required: false },
     },
     preview: { type: String, required: true },
+    overview: { type: String, required: false },
+    isFav: { type: Boolean, required: false },
 });
 
 export const VoitureModel = mongoose.model("Voiture", VoitureSchema);
